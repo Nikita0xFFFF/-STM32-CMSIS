@@ -1,0 +1,45 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "D:/Study/MK/ivt11m_sokolov_lab01/include",
+                "D:/Study/MK/ivt11m_sokolov_lab01/src",
+                "D:/Study/MK/ivt11m_sokolov_lab01/lib/dynlist",
+                "C:/PioVScPort/platformio/lib/Unity/src",
+                "C:/PioVScPort/platformio/lib/examples",
+                "D:/Study/MK/ivt11m_sokolov_lab01/.pio/libdeps/helloworld/Unity/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "D:/Study/MK/ivt11m_sokolov_lab01/include",
+                    "D:/Study/MK/ivt11m_sokolov_lab01/src",
+                    "D:/Study/MK/ivt11m_sokolov_lab01/lib/dynlist",
+                    "C:/PioVScPort/platformio/lib/Unity/src",
+                    "C:/PioVScPort/platformio/lib/examples",
+                    "D:/Study/MK/ivt11m_sokolov_lab01/.pio/libdeps/helloworld/Unity/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60118",
+                "__PLATFORMIO_BUILD_DEBUG__",
+                "UNITY_INCLUDE_CONFIG_H",
+                ""
+            ],
+            "cStandard": "c11",
+            "compilerPath": "C:/PioVScPort/msys64/mingw32/bin/gcc.exe",
+            "compilerArgs": [
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

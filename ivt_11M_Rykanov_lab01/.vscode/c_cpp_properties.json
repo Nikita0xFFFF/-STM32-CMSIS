@@ -1,0 +1,42 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "c:/MCU_mag2sem/workspace/ivt_11M_Rykanov_lab01/include",
+                "c:/MCU_mag2sem/workspace/ivt_11M_Rykanov_lab01/src",
+                "c:/MCU_mag2sem/workspace/ivt_11M_Rykanov_lab01/lib/dynlist/src",
+                "C:/PioVScPort/platformio/lib/Unity/src",
+                "C:/PioVScPort/platformio/lib/examples",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "c:/MCU_mag2sem/workspace/ivt_11M_Rykanov_lab01/include",
+                    "c:/MCU_mag2sem/workspace/ivt_11M_Rykanov_lab01/src",
+                    "c:/MCU_mag2sem/workspace/ivt_11M_Rykanov_lab01/lib/dynlist/src",
+                    "C:/PioVScPort/platformio/lib/Unity/src",
+                    "C:/PioVScPort/platformio/lib/examples",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60118",
+                "__PLATFORMIO_BUILD_DEBUG__",
+                ""
+            ],
+            "cStandard": "c11",
+            "compilerPath": "C:/PioVScPort/msys64/mingw32/bin/gcc.exe",
+            "compilerArgs": [
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

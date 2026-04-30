@@ -1,0 +1,53 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "D:/Study/MK/ivt11m_sokolov_lab02/include",
+                "D:/Study/MK/ivt11m_sokolov_lab02/src",
+                "D:/Study/MK/ivt11m_sokolov_lab02/lib/myled",
+                "C:/PioVScPort/platformio/packages/framework-cmsis@2.50501.200527/CMSIS/Include",
+                "C:/PioVScPort/platformio/packages/framework-cmsis-stm32h7/Include",
+                "C:/PioVScPort/platformio/lib/Unity/src",
+                "C:/PioVScPort/platformio/lib/examples",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "D:/Study/MK/ivt11m_sokolov_lab02/include",
+                    "D:/Study/MK/ivt11m_sokolov_lab02/src",
+                    "D:/Study/MK/ivt11m_sokolov_lab02/lib/myled",
+                    "C:/PioVScPort/platformio/packages/framework-cmsis@2.50501.200527/CMSIS/Include",
+                    "C:/PioVScPort/platformio/packages/framework-cmsis-stm32h7/Include",
+                    "C:/PioVScPort/platformio/lib/Unity/src",
+                    "C:/PioVScPort/platformio/lib/examples",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60118",
+                "STM32H7",
+                "STM32H7xx",
+                "STM32H745xx",
+                "CORE_CM7",
+                "F_CPU=480000000L",
+                "__PLATFORMIO_BUILD_DEBUG__",
+                ""
+            ],
+            "cStandard": "c11",
+            "compilerPath": "C:/PioVScPort/platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mthumb",
+                "-mcpu=cortex-m7",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
