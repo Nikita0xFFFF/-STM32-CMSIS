@@ -12,35 +12,35 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "D:/Study/MK/ivt11m_sokolov_lab02/.pio/build/nucleo_h745zi_q/firmware.elf",
-            "projectEnvName": "nucleo_h745zi_q",
+            "executable": "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/.pio/build/genericSTM32F401RCT6/firmware.elf",
+            "projectEnvName": "genericSTM32F401RCT6",
             "toolchainBinDir": "C:/PioVScPort/platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin",
             "internalConsoleOptions": "openOnSessionStart",
-            "svdPath": "C:/PioVScPort/platformio/platforms/ststm32/misc/svd/STM32H745_CM7.svd",
+            "svdPath": "C:/PioVScPort/platformio/platforms/ststm32/misc/svd/STM32F401x.svd",
             "preLaunchTask": {
                 "type": "PlatformIO",
-                "task": "Pre-Debug"
+                "task": "Pre-Debug (genericSTM32F401RCT6)"
             }
         },
         {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "D:/Study/MK/ivt11m_sokolov_lab02/.pio/build/nucleo_h745zi_q/firmware.elf",
-            "projectEnvName": "nucleo_h745zi_q",
+            "executable": "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/.pio/build/genericSTM32F401RCT6/firmware.elf",
+            "projectEnvName": "genericSTM32F401RCT6",
             "toolchainBinDir": "C:/PioVScPort/platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin",
             "internalConsoleOptions": "openOnSessionStart",
-            "svdPath": "C:/PioVScPort/platformio/platforms/ststm32/misc/svd/STM32H745_CM7.svd"
+            "svdPath": "C:/PioVScPort/platformio/platforms/ststm32/misc/svd/STM32F401x.svd"
         },
         {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "D:/Study/MK/ivt11m_sokolov_lab02/.pio/build/nucleo_h745zi_q/firmware.elf",
-            "projectEnvName": "nucleo_h745zi_q",
+            "executable": "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/.pio/build/genericSTM32F401RCT6/firmware.elf",
+            "projectEnvName": "genericSTM32F401RCT6",
             "toolchainBinDir": "C:/PioVScPort/platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin",
             "internalConsoleOptions": "openOnSessionStart",
-            "svdPath": "C:/PioVScPort/platformio/platforms/ststm32/misc/svd/STM32H745_CM7.svd",
+            "svdPath": "C:/PioVScPort/platformio/platforms/ststm32/misc/svd/STM32F401x.svd",
             "loadMode": "manual"
         }
     ]
