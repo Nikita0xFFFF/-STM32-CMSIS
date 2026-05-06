@@ -8,29 +8,27 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/include",
-                "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/src",
-                "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/lib/vterm",
-                "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/lib/myled",
+                "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02_test/include",
+                "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02_test/src",
+                "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02_test/lib/myled",
                 "C:/PioVScPort/platformio/packages/framework-cmsis@2.50501.200527/CMSIS/Include",
                 "C:/PioVScPort/platformio/packages/framework-cmsis-stm32f4/Include",
                 "C:/PioVScPort/platformio/lib/Unity/src",
                 "C:/PioVScPort/platformio/lib/examples",
-                "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/.pio/libdeps/genericSTM32F401RCT6/Unity/src",
+                "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02_test/lib/vterm",
                 ""
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/include",
-                    "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/src",
-                    "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/lib/vterm",
-                    "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/lib/myled",
+                    "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02_test/include",
+                    "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02_test/src",
+                    "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02_test/lib/myled",
                     "C:/PioVScPort/platformio/packages/framework-cmsis@2.50501.200527/CMSIS/Include",
                     "C:/PioVScPort/platformio/packages/framework-cmsis-stm32f4/Include",
                     "C:/PioVScPort/platformio/lib/Unity/src",
                     "C:/PioVScPort/platformio/lib/examples",
-                    "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02/.pio/libdeps/genericSTM32F401RCT6/Unity/src",
+                    "D:/Study/-STM32-CMSIS/ivt11m_sokolov_lab02_test/lib/vterm",
                     ""
                 ]
             },
@@ -42,7 +40,6 @@
                 "CORE_CM4",
                 "F_CPU=84000000L",
                 "__PLATFORMIO_BUILD_DEBUG__",
-                "UNITY_INCLUDE_CONFIG_H",
                 ""
             ],
             "cStandard": "c11",

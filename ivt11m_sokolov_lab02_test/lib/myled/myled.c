@@ -63,11 +63,7 @@
 #define LED_COMMON_PORT GPIOC
 #define LED_COMMON_PIN  13
 
-#define LED_RCC_EN(port)   do { \
-    if (port == GPIOB) { \
-        RCC->AHB1ENR |= RCC_AHB1ENR_GPIOBEN; \
-    } \
-} while (0)
+#define LED_RCC_EN(port)    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN
 
 // Макросы для настройки режима
 #define LED_SET_OUTPUT(port, moder_mask, moder_out)  MODIFY_REG((port)->MODER, (moder_mask), (moder_out))
@@ -80,27 +76,23 @@
 
 #define LED_TOGGLE(port, pin) TOGGLE_BIT((port)->ODR, (pin))
 
-#define LED_BLUE_PORT  GPIOC  
-#define LED_BLUE_PIN   LED_COMMON_PIN 
-#define LED_BLUE_MODER_MASK  GPIO_MODER_MODE13_Msk
-#define LED_BLUE_MODER_OUT   GPIO_MODER_MODE13_0
-#define LED_BLUE_MODER_AN    (GPIO_MODER_MODE13_0 | GPIO_MODER_MODE13_1)
 
 
-#define LED_GREEN_PORT  GPIOB  
-#define LED_GREEN_PIN   12
-#define LED_GREEN_MODER_MASK  GPIO_MODER_MODE12_Msk
-#define LED_GREEN_MODER_OUT   GPIO_MODER_MODE12_0
-#define LED_GREEN_MODER_AN    (GPIO_MODER_MODE12_0 | GPIO_MODER_MODE12_1)
 
-#define LED_RED_PORT    GPIOB  
-#define LED_RED_PIN     14
-#define LED_RED_MODER_MASK    GPIO_MODER_MODE14_Msk
-#define LED_RED_MODER_OUT     GPIO_MODER_MODE14_0
-#define LED_RED_MODER_AN      (GPIO_MODER_MODE14_0 | GPIO_MODER_MODE14_1)
+#define LED_GREEN_PORT  GPIOC  
+#define LED_GREEN_PIN   LED_COMMON_PIN 
+#define LED_GREEN_MODER_MASK  GPIO_MODER_MODE13_Msk
+#define LED_GREEN_MODER_OUT   GPIO_MODER_MODE13_0
+#define LED_GREEN_MODER_AN    (GPIO_MODER_MODE13_0 | GPIO_MODER_MODE13_1)
 
-#define LED_YELLOW_PORT GPIOB  
-#define LED_YELLOW_PIN  13 
+#define LED_RED_PORT    GPIOC  
+#define LED_RED_PIN     LED_COMMON_PIN 
+#define LED_RED_MODER_MASK    GPIO_MODER_MODE13_Msk
+#define LED_RED_MODER_OUT     GPIO_MODER_MODE13_0
+#define LED_RED_MODER_AN      (GPIO_MODER_MODE13_0 | GPIO_MODER_MODE13_1)
+
+#define LED_YELLOW_PORT GPIOC  
+#define LED_YELLOW_PIN  LED_COMMON_PIN 
 #define LED_YELLOW_MODER_MASK GPIO_MODER_MODE13_Msk
 #define LED_YELLOW_MODER_OUT  GPIO_MODER_MODE13_0
 #define LED_YELLOW_MODER_AN   (GPIO_MODER_MODE13_0 | GPIO_MODER_MODE13_1)
@@ -145,8 +137,7 @@ void led_on(led_t led) {
     }
     if (led & led_yellow) {
         LED_ON(LED_YELLOW_PORT, LED_YELLOW_PIN);
-    } else
-        LED_ON(LED_BLUE_PORT, LED_BLUE_PIN);
+    }
 }
 
 void led_off(led_t led) {
@@ -195,20 +186,18 @@ void button_enable() {
 uint8_t button_is_pressed(void) {
     return (~(BUTTON_PORT->IDR) & GPIO_IDR_ID0);  //  (Нажата(0)) и 1 = 0
 }
-// ========= led =========
-void myled_enable() {
-    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN;       // тактирование GPIOX
-    LED_SET_OUTPUT(LED_BLUE_PORT, LED_BLUE_MODER_MASK, LED_BLUE_MODER_OUT);
-}
+//========= led =========
+// void myled_enable() {
+//     RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN;       // тактирование GPIOX
+//     LED_GPIO_PORT->MODER &= ~LED_MODER_MASK;   // очистка битов для PX
+//     LED_GPIO_PORT->MODER |= LED_MODER_OUTPUT;  // режим output для PX
+// }
 
-void myled_toggle() {
-    TOGGLE_BIT(LED_BLUE_PORT ->ODR, LED_BLUE_PIN);  // переключение PX
-}
+// void myled_toggle() {
+//     TOGGLE_BIT(LED_GPIO_PORT->ODR, LED_GPIO_PIN);  // переключение PX
+// }
 
-void myled_disable() {
-    LED_BLUE_PORT->MODER &= ~LED_BLUE_MODER_MASK;   // очистка битов для PX
-    LED_BLUE_PORT->MODER |= LED_BLUE_MODER_AN;  // analog mode
-}
-void myled_on() {
-        LED_ON(LED_BLUE_PORT, LED_BLUE_PIN);
-}
+// void myled_disable() {
+//     LED_GPIO_PORT->MODER &= ~LED_MODER_MASK;   // очистка битов для PX
+//     LED_GPIO_PORT->MODER |= LED_MODER_ANALOG;  // analog mode
+// }

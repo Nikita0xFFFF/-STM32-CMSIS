@@ -2,7 +2,7 @@
 void myled_enable();
 void myled_toggle();
 void myled_disable();
-void myled_on();
+
 void button_enable();
 
 typedef enum {
